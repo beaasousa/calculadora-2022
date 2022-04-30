@@ -16,13 +16,14 @@ opcaoDesejada = Console.ReadLine()!;
 switch (opcaoDesejada)
 {
     case "+":
-        Console.WriteLine("Você selecionou soma");
+        CalcularSoma();
+
         break;
     case "-":
-        Console.WriteLine("Você selecionou subtração");
+        Console.WriteLine("--- Subtração ---");
         break;
     case "*":
-        double a, b, resultado;
+        double a, b, resultadoMulti;
 
         Console.WriteLine("--- Multiplicação A*B ---\n");
         Console.WriteLine("Digite os valores.");
@@ -32,9 +33,9 @@ switch (opcaoDesejada)
         Console.Write("B = ");
         b = Convert.ToDouble(Console.ReadLine());
 
-        resultado = a * b;
+        resultadoMulti = a*b;
 
-        Console.WriteLine($"{a} multiplicado por {b} é {resultado}");
+        Console.WriteLine($"{a} multiplicado por {b} é {resultadoMulti}");
 
         Console.WriteLine("\nPressione uma tecla para continuar...");
         Console.ReadKey();
@@ -49,3 +50,9 @@ switch (opcaoDesejada)
 }
 
 Console.WriteLine("\nObrigado por utilizar nosso programa.");
+
+void CalcularSoma()
+{
+    Console.WriteLine("--- Soma A+B ---\n");
+    return;
+}
